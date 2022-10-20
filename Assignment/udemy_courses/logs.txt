@@ -1,0 +1,656 @@
+22/10/20 16:02:24 WARN Utils: Your hostname, 1011000011101110 resolves to a loopback address: 127.0.1.1; using 192.168.1.72 instead (on interface wlp3s0)
+22/10/20 16:02:24 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+22/10/20 16:02:26 INFO SparkContext: Running Spark version 3.3.0
+22/10/20 16:02:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+22/10/20 16:02:26 INFO ResourceUtils: ==============================================================
+22/10/20 16:02:26 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/10/20 16:02:26 INFO ResourceUtils: ==============================================================
+22/10/20 16:02:26 INFO SparkContext: Submitted application: Udemy Courses
+22/10/20 16:02:26 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/10/20 16:02:26 INFO ResourceProfile: Limiting resource is cpu
+22/10/20 16:02:26 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/10/20 16:02:26 INFO SecurityManager: Changing view acls to: prasag
+22/10/20 16:02:26 INFO SecurityManager: Changing modify acls to: prasag
+22/10/20 16:02:26 INFO SecurityManager: Changing view acls groups to: 
+22/10/20 16:02:26 INFO SecurityManager: Changing modify acls groups to: 
+22/10/20 16:02:26 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(prasag); groups with view permissions: Set(); users  with modify permissions: Set(prasag); groups with modify permissions: Set()
+22/10/20 16:02:27 INFO Utils: Successfully started service 'sparkDriver' on port 39717.
+22/10/20 16:02:27 INFO SparkEnv: Registering MapOutputTracker
+22/10/20 16:02:27 INFO SparkEnv: Registering BlockManagerMaster
+22/10/20 16:02:27 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/10/20 16:02:27 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/10/20 16:02:27 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/10/20 16:02:27 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-f04841b7-578b-4696-8d77-ef57e9cd5f7c
+22/10/20 16:02:27 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+22/10/20 16:02:27 INFO SparkEnv: Registering OutputCommitCoordinator
+22/10/20 16:02:27 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+22/10/20 16:02:27 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+22/10/20 16:02:27 INFO Utils: Successfully started service 'SparkUI' on port 4042.
+22/10/20 16:02:28 INFO Executor: Starting executor ID driver on host 192.168.1.72
+22/10/20 16:02:28 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+22/10/20 16:02:28 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41245.
+22/10/20 16:02:28 INFO NettyBlockTransferService: Server created on 192.168.1.72:41245
+22/10/20 16:02:28 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/10/20 16:02:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.1.72, 41245, None)
+22/10/20 16:02:28 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.1.72:41245 with 434.4 MiB RAM, BlockManagerId(driver, 192.168.1.72, 41245, None)
+22/10/20 16:02:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.1.72, 41245, None)
+22/10/20 16:02:28 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.1.72, 41245, None)
+22/10/20 16:02:28 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+22/10/20 16:02:28 INFO SharedState: Warehouse path is 'file:/home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/spark-warehouse'.
+22/10/20 16:02:30 INFO InMemoryFileIndex: It took 88 ms to list leaf files for 1 paths.
+22/10/20 16:02:30 INFO InMemoryFileIndex: It took 4 ms to list leaf files for 1 paths.
+22/10/20 16:02:33 INFO FileSourceStrategy: Pushed Filters: 
+22/10/20 16:02:33 INFO FileSourceStrategy: Post-Scan Filters: 
+22/10/20 16:02:33 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+22/10/20 16:02:34 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.1 KiB, free 434.2 MiB)
+22/10/20 16:02:34 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.0 KiB, free 434.2 MiB)
+22/10/20 16:02:34 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.168.1.72:41245 (size: 34.0 KiB, free: 434.4 MiB)
+22/10/20 16:02:34 INFO SparkContext: Created broadcast 0 from json at NativeMethodAccessorImpl.java:0
+22/10/20 16:02:34 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+22/10/20 16:02:34 INFO SparkContext: Starting job: json at NativeMethodAccessorImpl.java:0
+22/10/20 16:02:34 INFO DAGScheduler: Got job 0 (json at NativeMethodAccessorImpl.java:0) with 1 output partitions
+22/10/20 16:02:34 INFO DAGScheduler: Final stage: ResultStage 0 (json at NativeMethodAccessorImpl.java:0)
+22/10/20 16:02:34 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:34 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:34 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at json at NativeMethodAccessorImpl.java:0), which has no missing parents
+22/10/20 16:02:34 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 14.5 KiB, free 434.2 MiB)
+22/10/20 16:02:34 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 7.0 KiB, free 434.2 MiB)
+22/10/20 16:02:34 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.168.1.72:41245 (size: 7.0 KiB, free: 434.4 MiB)
+22/10/20 16:02:34 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:34 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at json at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:34 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+22/10/20 16:02:35 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4953 bytes) taskResourceAssignments Map()
+22/10/20 16:02:35 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+22/10/20 16:02:35 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:35 INFO CodeGenerator: Code generated in 299.315022 ms
+22/10/20 16:02:35 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2280 bytes result sent to driver
+22/10/20 16:02:35 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 903 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:35 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+22/10/20 16:02:35 INFO DAGScheduler: ResultStage 0 (json at NativeMethodAccessorImpl.java:0) finished in 1.172 s
+22/10/20 16:02:35 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:35 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+22/10/20 16:02:35 INFO DAGScheduler: Job 0 finished: json at NativeMethodAccessorImpl.java:0, took 1.249568 s
+22/10/20 16:02:36 INFO FileSourceStrategy: Pushed Filters: 
+22/10/20 16:02:36 INFO FileSourceStrategy: Post-Scan Filters: 
+22/10/20 16:02:36 INFO FileSourceStrategy: Output Data Schema: struct<_corrupt_record: string, content_duration: string, course_id: string, course_title: string, is_paid: string ... 11 more fields>
+22/10/20 16:02:36 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.0 KiB, free 434.0 MiB)
+22/10/20 16:02:36 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.9 MiB)
+22/10/20 16:02:36 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 192.168.1.72:41245 (size: 33.9 KiB, free: 434.3 MiB)
+22/10/20 16:02:36 INFO SparkContext: Created broadcast 2 from toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:13
+22/10/20 16:02:36 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+22/10/20 16:02:36 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:13
+22/10/20 16:02:36 INFO DAGScheduler: Got job 1 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:13) with 1 output partitions
+22/10/20 16:02:36 INFO DAGScheduler: Final stage: ResultStage 1 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:13)
+22/10/20 16:02:36 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:36 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:36 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[6] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:13), which has no missing parents
+22/10/20 16:02:36 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 10.7 KiB, free 433.9 MiB)
+22/10/20 16:02:36 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 5.7 KiB, free 433.9 MiB)
+22/10/20 16:02:36 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.168.1.72:41245 (size: 5.7 KiB, free: 434.3 MiB)
+22/10/20 16:02:36 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:36 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[6] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:13) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:36 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+22/10/20 16:02:36 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4953 bytes) taskResourceAssignments Map()
+22/10/20 16:02:36 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+22/10/20 16:02:36 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:36 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 192.168.1.72:41245 in memory (size: 34.0 KiB, free: 434.4 MiB)
+22/10/20 16:02:36 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 192.168.1.72:41245 in memory (size: 7.0 KiB, free: 434.4 MiB)
+22/10/20 16:02:36 INFO CodeGenerator: Code generated in 45.909587 ms
+22/10/20 16:02:37 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 567654 bytes result sent to driver
+22/10/20 16:02:37 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 346 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:37 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+22/10/20 16:02:37 INFO DAGScheduler: ResultStage 1 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:13) finished in 0.365 s
+22/10/20 16:02:37 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:37 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+22/10/20 16:02:37 INFO DAGScheduler: Job 1 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:13, took 0.372075 s
+22/10/20 16:02:37 INFO FileSourceStrategy: Pushed Filters: IsNotNull(is_paid),EqualTo(is_paid,False)
+22/10/20 16:02:37 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(is_paid#12),(is_paid#12 = False)
+22/10/20 16:02:37 INFO FileSourceStrategy: Output Data Schema: struct<course_title: string, is_paid: string, num_reviews: string, num_subscribers: string, subject: string ... 3 more fields>
+22/10/20 16:02:37 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 192.168.1.72:41245 in memory (size: 5.7 KiB, free: 434.4 MiB)
+22/10/20 16:02:38 INFO CodeGenerator: Code generated in 36.814047 ms
+22/10/20 16:02:38 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 199.0 KiB, free 434.0 MiB)
+22/10/20 16:02:38 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.9 MiB)
+22/10/20 16:02:38 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 192.168.1.72:41245 (size: 33.9 KiB, free: 434.3 MiB)
+22/10/20 16:02:38 INFO SparkContext: Created broadcast 4 from toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26
+22/10/20 16:02:38 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+22/10/20 16:02:38 INFO CodeGenerator: Code generated in 29.372268 ms
+22/10/20 16:02:38 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26
+22/10/20 16:02:38 INFO DAGScheduler: Got job 2 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26) with 1 output partitions
+22/10/20 16:02:38 INFO DAGScheduler: Final stage: ResultStage 2 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26)
+22/10/20 16:02:38 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:38 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:38 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[12] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26), which has no missing parents
+22/10/20 16:02:38 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 18.1 KiB, free 433.9 MiB)
+22/10/20 16:02:38 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 8.6 KiB, free 433.9 MiB)
+22/10/20 16:02:38 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 192.168.1.72:41245 (size: 8.6 KiB, free: 434.3 MiB)
+22/10/20 16:02:38 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:38 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[12] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:38 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+22/10/20 16:02:38 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4953 bytes) taskResourceAssignments Map()
+22/10/20 16:02:38 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+22/10/20 16:02:38 INFO CodeGenerator: Code generated in 26.488815 ms
+22/10/20 16:02:38 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:38 INFO CodeGenerator: Code generated in 25.628821 ms
+22/10/20 16:02:38 INFO CodeGenerator: Code generated in 9.725946 ms
+22/10/20 16:02:38 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 22306 bytes result sent to driver
+22/10/20 16:02:38 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 208 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:38 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+22/10/20 16:02:38 INFO DAGScheduler: ResultStage 2 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26) finished in 0.223 s
+22/10/20 16:02:38 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:38 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+22/10/20 16:02:38 INFO DAGScheduler: Job 2 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26, took 0.230368 s
+22/10/20 16:02:38 INFO DAGScheduler: Registering RDD 13 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26) as input to shuffle 0
+22/10/20 16:02:38 INFO DAGScheduler: Got map stage job 3 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26) with 1 output partitions
+22/10/20 16:02:38 INFO DAGScheduler: Final stage: ShuffleMapStage 3 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26)
+22/10/20 16:02:38 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:38 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:38 INFO DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[13] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26), which has no missing parents
+22/10/20 16:02:38 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 33.3 KiB, free 433.9 MiB)
+22/10/20 16:02:38 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 12.3 KiB, free 433.9 MiB)
+22/10/20 16:02:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 192.168.1.72:41245 (size: 12.3 KiB, free: 434.3 MiB)
+22/10/20 16:02:38 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:38 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[13] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:38 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks resource profile 0
+22/10/20 16:02:38 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4942 bytes) taskResourceAssignments Map()
+22/10/20 16:02:38 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+22/10/20 16:02:38 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:38 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 192.168.1.72:41245 in memory (size: 8.6 KiB, free: 434.3 MiB)
+22/10/20 16:02:38 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 2127 bytes result sent to driver
+22/10/20 16:02:38 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 290 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:38 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+22/10/20 16:02:38 INFO DAGScheduler: ShuffleMapStage 3 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26) finished in 0.328 s
+22/10/20 16:02:38 INFO DAGScheduler: looking for newly runnable stages
+22/10/20 16:02:38 INFO DAGScheduler: running: Set()
+22/10/20 16:02:38 INFO DAGScheduler: waiting: Set()
+22/10/20 16:02:38 INFO DAGScheduler: failed: Set()
+22/10/20 16:02:39 INFO ShufflePartitionsUtil: For shuffle(0), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+22/10/20 16:02:39 INFO CodeGenerator: Code generated in 27.674529 ms
+22/10/20 16:02:39 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26
+22/10/20 16:02:39 INFO DAGScheduler: Got job 4 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26) with 1 output partitions
+22/10/20 16:02:39 INFO DAGScheduler: Final stage: ResultStage 5 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26)
+22/10/20 16:02:39 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 4)
+22/10/20 16:02:39 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:39 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[16] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26), which has no missing parents
+22/10/20 16:02:39 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 32.8 KiB, free 433.9 MiB)
+22/10/20 16:02:39 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 15.7 KiB, free 433.9 MiB)
+22/10/20 16:02:39 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 192.168.1.72:41245 (size: 15.7 KiB, free: 434.3 MiB)
+22/10/20 16:02:39 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:39 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[16] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:39 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks resource profile 0
+22/10/20 16:02:39 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 4) (192.168.1.72, executor driver, partition 0, NODE_LOCAL, 4453 bytes) taskResourceAssignments Map()
+22/10/20 16:02:39 INFO Executor: Running task 0.0 in stage 5.0 (TID 4)
+22/10/20 16:02:39 INFO ShuffleBlockFetcherIterator: Getting 1 (37.4 KiB) non-empty blocks including 1 (37.4 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+22/10/20 16:02:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 21 ms
+22/10/20 16:02:39 INFO CodeGenerator: Code generated in 19.515088 ms
+22/10/20 16:02:39 INFO CodeGenerator: Code generated in 24.18294 ms
+22/10/20 16:02:39 INFO Executor: Finished task 0.0 in stage 5.0 (TID 4). 17969 bytes result sent to driver
+22/10/20 16:02:39 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 4) in 222 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:39 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+22/10/20 16:02:39 INFO DAGScheduler: ResultStage 5 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26) finished in 0.240 s
+22/10/20 16:02:39 INFO DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:39 INFO TaskSchedulerImpl: Killing all running tasks in stage 5: Stage finished
+22/10/20 16:02:39 INFO DAGScheduler: Job 4 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:26, took 0.273273 s
+22/10/20 16:02:39 INFO FileSourceStrategy: Pushed Filters: 
+22/10/20 16:02:39 INFO FileSourceStrategy: Post-Scan Filters: 
+22/10/20 16:02:39 INFO FileSourceStrategy: Output Data Schema: struct<course_title: string, num_subscribers: string>
+22/10/20 16:02:39 INFO CodeGenerator: Code generated in 13.22841 ms
+22/10/20 16:02:39 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 199.0 KiB, free 433.7 MiB)
+22/10/20 16:02:39 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 192.168.1.72:41245 in memory (size: 15.7 KiB, free: 434.3 MiB)
+22/10/20 16:02:39 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.7 MiB)
+22/10/20 16:02:39 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 192.168.1.72:41245 (size: 33.9 KiB, free: 434.3 MiB)
+22/10/20 16:02:39 INFO SparkContext: Created broadcast 8 from toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40
+22/10/20 16:02:39 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+22/10/20 16:02:39 INFO CodeGenerator: Code generated in 10.930833 ms
+22/10/20 16:02:39 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 192.168.1.72:41245 in memory (size: 12.3 KiB, free: 434.3 MiB)
+22/10/20 16:02:39 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40
+22/10/20 16:02:39 INFO DAGScheduler: Got job 5 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40) with 1 output partitions
+22/10/20 16:02:39 INFO DAGScheduler: Final stage: ResultStage 6 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40)
+22/10/20 16:02:39 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:39 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:39 INFO DAGScheduler: Submitting ResultStage 6 (MapPartitionsRDD[22] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40), which has no missing parents
+22/10/20 16:02:39 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 15.6 KiB, free 433.7 MiB)
+22/10/20 16:02:39 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 7.8 KiB, free 433.7 MiB)
+22/10/20 16:02:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 192.168.1.72:41245 (size: 7.8 KiB, free: 434.3 MiB)
+22/10/20 16:02:39 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:39 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[22] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:39 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks resource profile 0
+22/10/20 16:02:39 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 5) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4953 bytes) taskResourceAssignments Map()
+22/10/20 16:02:39 INFO Executor: Running task 0.0 in stage 6.0 (TID 5)
+22/10/20 16:02:39 INFO CodeGenerator: Code generated in 10.48088 ms
+22/10/20 16:02:39 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:39 INFO CodeGenerator: Code generated in 10.058282 ms
+22/10/20 16:02:39 INFO Executor: Finished task 0.0 in stage 6.0 (TID 5). 123374 bytes result sent to driver
+22/10/20 16:02:39 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 5) in 121 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:39 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+22/10/20 16:02:39 INFO DAGScheduler: ResultStage 6 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40) finished in 0.133 s
+22/10/20 16:02:39 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:39 INFO TaskSchedulerImpl: Killing all running tasks in stage 6: Stage finished
+22/10/20 16:02:39 INFO DAGScheduler: Job 5 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40, took 0.140502 s
+22/10/20 16:02:39 INFO DAGScheduler: Registering RDD 23 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40) as input to shuffle 1
+22/10/20 16:02:39 INFO DAGScheduler: Got map stage job 6 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40) with 1 output partitions
+22/10/20 16:02:39 INFO DAGScheduler: Final stage: ShuffleMapStage 7 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40)
+22/10/20 16:02:39 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:39 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:39 INFO DAGScheduler: Submitting ShuffleMapStage 7 (MapPartitionsRDD[23] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40), which has no missing parents
+22/10/20 16:02:39 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 23.8 KiB, free 433.7 MiB)
+22/10/20 16:02:39 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 9.9 KiB, free 433.7 MiB)
+22/10/20 16:02:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 192.168.1.72:41245 (size: 9.9 KiB, free: 434.3 MiB)
+22/10/20 16:02:39 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:39 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 7 (MapPartitionsRDD[23] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:39 INFO TaskSchedulerImpl: Adding task set 7.0 with 1 tasks resource profile 0
+22/10/20 16:02:39 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 6) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4942 bytes) taskResourceAssignments Map()
+22/10/20 16:02:39 INFO Executor: Running task 0.0 in stage 7.0 (TID 6)
+22/10/20 16:02:39 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:40 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 192.168.1.72:41245 in memory (size: 7.8 KiB, free: 434.3 MiB)
+22/10/20 16:02:40 INFO Executor: Finished task 0.0 in stage 7.0 (TID 6). 2023 bytes result sent to driver
+22/10/20 16:02:40 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 6) in 225 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:40 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+22/10/20 16:02:40 INFO DAGScheduler: ShuffleMapStage 7 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40) finished in 0.237 s
+22/10/20 16:02:40 INFO DAGScheduler: looking for newly runnable stages
+22/10/20 16:02:40 INFO DAGScheduler: running: Set()
+22/10/20 16:02:40 INFO DAGScheduler: waiting: Set()
+22/10/20 16:02:40 INFO DAGScheduler: failed: Set()
+22/10/20 16:02:40 INFO ShufflePartitionsUtil: For shuffle(1), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+22/10/20 16:02:40 INFO CodeGenerator: Code generated in 16.161681 ms
+22/10/20 16:02:40 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40
+22/10/20 16:02:40 INFO DAGScheduler: Got job 7 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40) with 1 output partitions
+22/10/20 16:02:40 INFO DAGScheduler: Final stage: ResultStage 9 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40)
+22/10/20 16:02:40 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 8)
+22/10/20 16:02:40 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:40 INFO DAGScheduler: Submitting ResultStage 9 (MapPartitionsRDD[26] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40), which has no missing parents
+22/10/20 16:02:40 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 28.2 KiB, free 433.7 MiB)
+22/10/20 16:02:40 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 14.0 KiB, free 433.6 MiB)
+22/10/20 16:02:40 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 192.168.1.72:41245 (size: 14.0 KiB, free: 434.3 MiB)
+22/10/20 16:02:40 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:40 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (MapPartitionsRDD[26] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:40 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks resource profile 0
+22/10/20 16:02:40 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 7) (192.168.1.72, executor driver, partition 0, NODE_LOCAL, 4453 bytes) taskResourceAssignments Map()
+22/10/20 16:02:40 INFO Executor: Running task 0.0 in stage 9.0 (TID 7)
+22/10/20 16:02:40 INFO ShuffleBlockFetcherIterator: Getting 1 (211.5 KiB) non-empty blocks including 1 (211.5 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+22/10/20 16:02:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+22/10/20 16:02:40 INFO CodeGenerator: Code generated in 11.644076 ms
+22/10/20 16:02:40 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 192.168.1.72:41245 in memory (size: 9.9 KiB, free: 434.3 MiB)
+22/10/20 16:02:40 INFO CodeGenerator: Code generated in 42.197463 ms
+22/10/20 16:02:40 INFO Executor: Finished task 0.0 in stage 9.0 (TID 7). 153054 bytes result sent to driver
+22/10/20 16:02:40 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 7) in 138 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:40 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+22/10/20 16:02:40 INFO DAGScheduler: ResultStage 9 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40) finished in 0.160 s
+22/10/20 16:02:40 INFO DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:40 INFO TaskSchedulerImpl: Killing all running tasks in stage 9: Stage finished
+22/10/20 16:02:40 INFO DAGScheduler: Job 7 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:40, took 0.176870 s
+22/10/20 16:02:40 INFO FileSourceStrategy: Pushed Filters: IsNotNull(subject),EqualTo(subject,Business Finance)
+22/10/20 16:02:40 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(subject#19),(subject#19 = Business Finance)
+22/10/20 16:02:40 INFO FileSourceStrategy: Output Data Schema: struct<_corrupt_record: string, content_duration: string, course_id: string, course_title: string, is_paid: string ... 11 more fields>
+22/10/20 16:02:40 INFO CodeGenerator: Code generated in 31.866232 ms
+22/10/20 16:02:40 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 199.0 KiB, free 433.5 MiB)
+22/10/20 16:02:40 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.4 MiB)
+22/10/20 16:02:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 192.168.1.72:41245 (size: 33.9 KiB, free: 434.3 MiB)
+22/10/20 16:02:40 INFO SparkContext: Created broadcast 12 from toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:56
+22/10/20 16:02:40 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+22/10/20 16:02:40 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:56
+22/10/20 16:02:40 INFO DAGScheduler: Got job 8 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:56) with 1 output partitions
+22/10/20 16:02:40 INFO DAGScheduler: Final stage: ResultStage 10 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:56)
+22/10/20 16:02:40 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:40 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:40 INFO DAGScheduler: Submitting ResultStage 10 (MapPartitionsRDD[30] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:56), which has no missing parents
+22/10/20 16:02:40 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 19.5 KiB, free 433.4 MiB)
+22/10/20 16:02:40 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 8.2 KiB, free 433.4 MiB)
+22/10/20 16:02:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 192.168.1.72:41245 (size: 8.2 KiB, free: 434.2 MiB)
+22/10/20 16:02:40 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:40 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 10 (MapPartitionsRDD[30] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:56) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:40 INFO TaskSchedulerImpl: Adding task set 10.0 with 1 tasks resource profile 0
+22/10/20 16:02:40 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 8) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4953 bytes) taskResourceAssignments Map()
+22/10/20 16:02:40 INFO Executor: Running task 0.0 in stage 10.0 (TID 8)
+22/10/20 16:02:40 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:40 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 192.168.1.72:41245 in memory (size: 14.0 KiB, free: 434.3 MiB)
+22/10/20 16:02:40 INFO CodeGenerator: Code generated in 8.141917 ms
+22/10/20 16:02:40 INFO Executor: Finished task 0.0 in stage 10.0 (TID 8). 164286 bytes result sent to driver
+22/10/20 16:02:40 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 8) in 113 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:40 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+22/10/20 16:02:40 INFO DAGScheduler: ResultStage 10 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:56) finished in 0.125 s
+22/10/20 16:02:40 INFO DAGScheduler: Job 8 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:40 INFO TaskSchedulerImpl: Killing all running tasks in stage 10: Stage finished
+22/10/20 16:02:40 INFO DAGScheduler: Job 8 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:56, took 0.130650 s
+22/10/20 16:02:41 INFO FileSourceStrategy: Pushed Filters: IsNotNull(subject),EqualTo(subject,Business Finance)
+22/10/20 16:02:41 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(subject#19),(subject#19 = Business Finance)
+22/10/20 16:02:41 INFO FileSourceStrategy: Output Data Schema: struct<num_lectures: string, num_reviews: string, num_subscribers: string, price: string, subject: string ... 3 more fields>
+22/10/20 16:02:41 INFO CodeGenerator: Code generated in 38.109766 ms
+22/10/20 16:02:41 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 199.0 KiB, free 433.3 MiB)
+22/10/20 16:02:41 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.2 MiB)
+22/10/20 16:02:41 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on 192.168.1.72:41245 (size: 33.9 KiB, free: 434.2 MiB)
+22/10/20 16:02:41 INFO SparkContext: Created broadcast 14 from toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58
+22/10/20 16:02:41 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+22/10/20 16:02:41 INFO DAGScheduler: Registering RDD 34 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58) as input to shuffle 2
+22/10/20 16:02:41 INFO DAGScheduler: Got map stage job 9 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58) with 1 output partitions
+22/10/20 16:02:41 INFO DAGScheduler: Final stage: ShuffleMapStage 11 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58)
+22/10/20 16:02:41 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:41 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:41 INFO DAGScheduler: Submitting ShuffleMapStage 11 (MapPartitionsRDD[34] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58), which has no missing parents
+22/10/20 16:02:41 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 27.6 KiB, free 433.2 MiB)
+22/10/20 16:02:41 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 11.4 KiB, free 433.2 MiB)
+22/10/20 16:02:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 192.168.1.72:41245 (size: 11.4 KiB, free: 434.2 MiB)
+22/10/20 16:02:41 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:41 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 11 (MapPartitionsRDD[34] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:41 INFO TaskSchedulerImpl: Adding task set 11.0 with 1 tasks resource profile 0
+22/10/20 16:02:41 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 9) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4942 bytes) taskResourceAssignments Map()
+22/10/20 16:02:41 INFO Executor: Running task 0.0 in stage 11.0 (TID 9)
+22/10/20 16:02:41 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:41 INFO CodeGenerator: Code generated in 7.491817 ms
+22/10/20 16:02:41 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 192.168.1.72:41245 in memory (size: 8.2 KiB, free: 434.2 MiB)
+22/10/20 16:02:41 INFO Executor: Finished task 0.0 in stage 11.0 (TID 9). 1980 bytes result sent to driver
+22/10/20 16:02:41 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 9) in 103 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:41 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+22/10/20 16:02:41 INFO DAGScheduler: ShuffleMapStage 11 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58) finished in 0.136 s
+22/10/20 16:02:41 INFO DAGScheduler: looking for newly runnable stages
+22/10/20 16:02:41 INFO DAGScheduler: running: Set()
+22/10/20 16:02:41 INFO DAGScheduler: waiting: Set()
+22/10/20 16:02:41 INFO DAGScheduler: failed: Set()
+22/10/20 16:02:41 INFO CodeGenerator: Code generated in 23.634116 ms
+22/10/20 16:02:41 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58
+22/10/20 16:02:41 INFO DAGScheduler: Got job 10 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58) with 1 output partitions
+22/10/20 16:02:41 INFO DAGScheduler: Final stage: ResultStage 13 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58)
+22/10/20 16:02:41 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 12)
+22/10/20 16:02:41 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:41 INFO DAGScheduler: Submitting ResultStage 13 (MapPartitionsRDD[37] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58), which has no missing parents
+22/10/20 16:02:41 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 19.7 KiB, free 433.2 MiB)
+22/10/20 16:02:41 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 7.8 KiB, free 433.2 MiB)
+22/10/20 16:02:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 192.168.1.72:41245 (size: 7.8 KiB, free: 434.2 MiB)
+22/10/20 16:02:41 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:41 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 13 (MapPartitionsRDD[37] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:41 INFO TaskSchedulerImpl: Adding task set 13.0 with 1 tasks resource profile 0
+22/10/20 16:02:41 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 10) (192.168.1.72, executor driver, partition 0, NODE_LOCAL, 4453 bytes) taskResourceAssignments Map()
+22/10/20 16:02:41 INFO Executor: Running task 0.0 in stage 13.0 (TID 10)
+22/10/20 16:02:41 INFO ShuffleBlockFetcherIterator: Getting 1 (88.0 B) non-empty blocks including 1 (88.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+22/10/20 16:02:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/10/20 16:02:41 INFO Executor: Finished task 0.0 in stage 13.0 (TID 10). 2681 bytes result sent to driver
+22/10/20 16:02:41 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 10) in 14 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:41 INFO TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+22/10/20 16:02:41 INFO DAGScheduler: ResultStage 13 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58) finished in 0.024 s
+22/10/20 16:02:41 INFO DAGScheduler: Job 10 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 13: Stage finished
+22/10/20 16:02:41 INFO DAGScheduler: Job 10 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:58, took 0.031097 s
+22/10/20 16:02:41 INFO FileSourceStrategy: Pushed Filters: 
+22/10/20 16:02:41 INFO FileSourceStrategy: Post-Scan Filters: 
+22/10/20 16:02:41 INFO FileSourceStrategy: Output Data Schema: struct<content_duration: string, course_title: string, price: string ... 1 more fields>
+22/10/20 16:02:41 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+22/10/20 16:02:41 INFO CodeGenerator: Code generated in 40.083431 ms
+22/10/20 16:02:41 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 199.0 KiB, free 433.0 MiB)
+22/10/20 16:02:41 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 192.168.1.72:41245 in memory (size: 11.4 KiB, free: 434.2 MiB)
+22/10/20 16:02:41 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 192.168.1.72:41245 in memory (size: 7.8 KiB, free: 434.2 MiB)
+22/10/20 16:02:41 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.0 MiB)
+22/10/20 16:02:41 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on 192.168.1.72:41245 (size: 33.9 KiB, free: 434.2 MiB)
+22/10/20 16:02:41 INFO SparkContext: Created broadcast 17 from toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83
+22/10/20 16:02:41 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+22/10/20 16:02:41 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 192.168.1.72:41245 in memory (size: 33.9 KiB, free: 434.2 MiB)
+22/10/20 16:02:41 INFO DAGScheduler: Registering RDD 41 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) as input to shuffle 3
+22/10/20 16:02:41 INFO DAGScheduler: Got map stage job 11 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) with 1 output partitions
+22/10/20 16:02:41 INFO DAGScheduler: Final stage: ShuffleMapStage 14 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83)
+22/10/20 16:02:41 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:41 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:41 INFO DAGScheduler: Submitting ShuffleMapStage 14 (MapPartitionsRDD[41] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83), which has no missing parents
+22/10/20 16:02:41 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 38.7 KiB, free 433.2 MiB)
+22/10/20 16:02:41 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 17.7 KiB, free 433.2 MiB)
+22/10/20 16:02:41 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 192.168.1.72:41245 (size: 17.7 KiB, free: 434.2 MiB)
+22/10/20 16:02:41 INFO SparkContext: Created broadcast 18 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:41 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 14 (MapPartitionsRDD[41] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:41 INFO TaskSchedulerImpl: Adding task set 14.0 with 1 tasks resource profile 0
+22/10/20 16:02:41 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 11) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4942 bytes) taskResourceAssignments Map()
+22/10/20 16:02:41 INFO Executor: Running task 0.0 in stage 14.0 (TID 11)
+22/10/20 16:02:42 INFO CodeGenerator: Code generated in 28.499336 ms
+22/10/20 16:02:42 INFO CodeGenerator: Code generated in 8.547201 ms
+22/10/20 16:02:42 INFO CodeGenerator: Code generated in 10.929973 ms
+22/10/20 16:02:42 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:42 INFO CodeGenerator: Code generated in 9.876137 ms
+22/10/20 16:02:42 INFO Executor: Finished task 0.0 in stage 14.0 (TID 11). 2727 bytes result sent to driver
+22/10/20 16:02:42 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 11) in 306 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:42 INFO TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool 
+22/10/20 16:02:42 INFO DAGScheduler: ShuffleMapStage 14 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) finished in 0.328 s
+22/10/20 16:02:42 INFO DAGScheduler: looking for newly runnable stages
+22/10/20 16:02:42 INFO DAGScheduler: running: Set()
+22/10/20 16:02:42 INFO DAGScheduler: waiting: Set()
+22/10/20 16:02:42 INFO DAGScheduler: failed: Set()
+22/10/20 16:02:42 INFO ShufflePartitionsUtil: For shuffle(3), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+22/10/20 16:02:42 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+22/10/20 16:02:42 INFO CodeGenerator: Code generated in 30.811114 ms
+22/10/20 16:02:42 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 192.168.1.72:41245 in memory (size: 17.7 KiB, free: 434.2 MiB)
+22/10/20 16:02:42 INFO CodeGenerator: Code generated in 20.355397 ms
+22/10/20 16:02:42 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83
+22/10/20 16:02:42 INFO DAGScheduler: Got job 12 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) with 1 output partitions
+22/10/20 16:02:42 INFO DAGScheduler: Final stage: ResultStage 16 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83)
+22/10/20 16:02:42 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 15)
+22/10/20 16:02:42 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:42 INFO DAGScheduler: Submitting ResultStage 16 (MapPartitionsRDD[46] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83), which has no missing parents
+22/10/20 16:02:42 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 44.3 KiB, free 433.2 MiB)
+22/10/20 16:02:42 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 19.7 KiB, free 433.2 MiB)
+22/10/20 16:02:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 192.168.1.72:41245 (size: 19.7 KiB, free: 434.2 MiB)
+22/10/20 16:02:42 INFO SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 16 (MapPartitionsRDD[46] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:42 INFO TaskSchedulerImpl: Adding task set 16.0 with 1 tasks resource profile 0
+22/10/20 16:02:42 INFO TaskSetManager: Starting task 0.0 in stage 16.0 (TID 12) (192.168.1.72, executor driver, partition 0, NODE_LOCAL, 4453 bytes) taskResourceAssignments Map()
+22/10/20 16:02:42 INFO Executor: Running task 0.0 in stage 16.0 (TID 12)
+22/10/20 16:02:42 INFO ShuffleBlockFetcherIterator: Getting 1 (268.4 KiB) non-empty blocks including 1 (268.4 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+22/10/20 16:02:42 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/10/20 16:02:42 INFO CodeGenerator: Code generated in 7.383452 ms
+22/10/20 16:02:42 INFO Executor: Finished task 0.0 in stage 16.0 (TID 12). 125388 bytes result sent to driver
+22/10/20 16:02:42 INFO TaskSetManager: Finished task 0.0 in stage 16.0 (TID 12) in 72 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:42 INFO TaskSchedulerImpl: Removed TaskSet 16.0, whose tasks have all completed, from pool 
+22/10/20 16:02:42 INFO DAGScheduler: ResultStage 16 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) finished in 0.083 s
+22/10/20 16:02:42 INFO DAGScheduler: Job 12 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 16: Stage finished
+22/10/20 16:02:42 INFO DAGScheduler: Job 12 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83, took 0.096167 s
+22/10/20 16:02:42 INFO DAGScheduler: Registering RDD 47 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) as input to shuffle 4
+22/10/20 16:02:42 INFO DAGScheduler: Got map stage job 13 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) with 1 output partitions
+22/10/20 16:02:42 INFO DAGScheduler: Final stage: ShuffleMapStage 18 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83)
+22/10/20 16:02:42 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 17)
+22/10/20 16:02:42 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:42 INFO DAGScheduler: Submitting ShuffleMapStage 18 (MapPartitionsRDD[47] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83), which has no missing parents
+22/10/20 16:02:42 INFO MemoryStore: Block broadcast_20 stored as values in memory (estimated size 50.5 KiB, free 433.2 MiB)
+22/10/20 16:02:42 INFO MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 21.4 KiB, free 433.1 MiB)
+22/10/20 16:02:42 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on 192.168.1.72:41245 (size: 21.4 KiB, free: 434.2 MiB)
+22/10/20 16:02:42 INFO SparkContext: Created broadcast 20 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:42 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 18 (MapPartitionsRDD[47] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:42 INFO TaskSchedulerImpl: Adding task set 18.0 with 1 tasks resource profile 0
+22/10/20 16:02:42 INFO TaskSetManager: Starting task 0.0 in stage 18.0 (TID 13) (192.168.1.72, executor driver, partition 0, NODE_LOCAL, 4442 bytes) taskResourceAssignments Map()
+22/10/20 16:02:42 INFO Executor: Running task 0.0 in stage 18.0 (TID 13)
+22/10/20 16:02:42 INFO ShuffleBlockFetcherIterator: Getting 1 (268.4 KiB) non-empty blocks including 1 (268.4 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+22/10/20 16:02:42 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/10/20 16:02:42 INFO Executor: Finished task 0.0 in stage 18.0 (TID 13). 4163 bytes result sent to driver
+22/10/20 16:02:42 INFO TaskSetManager: Finished task 0.0 in stage 18.0 (TID 13) in 91 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:42 INFO TaskSchedulerImpl: Removed TaskSet 18.0, whose tasks have all completed, from pool 
+22/10/20 16:02:42 INFO DAGScheduler: ShuffleMapStage 18 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) finished in 0.104 s
+22/10/20 16:02:42 INFO DAGScheduler: looking for newly runnable stages
+22/10/20 16:02:42 INFO DAGScheduler: running: Set()
+22/10/20 16:02:42 INFO DAGScheduler: waiting: Set()
+22/10/20 16:02:42 INFO DAGScheduler: failed: Set()
+22/10/20 16:02:42 INFO ShufflePartitionsUtil: For shuffle(4), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+22/10/20 16:02:42 INFO CodeGenerator: Code generated in 12.015893 ms
+22/10/20 16:02:42 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83
+22/10/20 16:02:42 INFO DAGScheduler: Got job 14 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) with 1 output partitions
+22/10/20 16:02:42 INFO DAGScheduler: Final stage: ResultStage 21 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83)
+22/10/20 16:02:42 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 20)
+22/10/20 16:02:42 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:42 INFO DAGScheduler: Submitting ResultStage 21 (MapPartitionsRDD[50] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83), which has no missing parents
+22/10/20 16:02:42 INFO MemoryStore: Block broadcast_21 stored as values in memory (estimated size 40.6 KiB, free 433.1 MiB)
+22/10/20 16:02:42 INFO MemoryStore: Block broadcast_21_piece0 stored as bytes in memory (estimated size 18.3 KiB, free 433.1 MiB)
+22/10/20 16:02:42 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 192.168.1.72:41245 (size: 18.3 KiB, free: 434.2 MiB)
+22/10/20 16:02:42 INFO SparkContext: Created broadcast 21 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 21 (MapPartitionsRDD[50] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:42 INFO TaskSchedulerImpl: Adding task set 21.0 with 1 tasks resource profile 0
+22/10/20 16:02:42 INFO TaskSetManager: Starting task 0.0 in stage 21.0 (TID 14) (192.168.1.72, executor driver, partition 0, NODE_LOCAL, 4453 bytes) taskResourceAssignments Map()
+22/10/20 16:02:42 INFO Executor: Running task 0.0 in stage 21.0 (TID 14)
+22/10/20 16:02:42 INFO ShuffleBlockFetcherIterator: Getting 1 (203.3 KiB) non-empty blocks including 1 (203.3 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+22/10/20 16:02:42 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/10/20 16:02:42 INFO CodeGenerator: Code generated in 11.009254 ms
+22/10/20 16:02:42 INFO CodeGenerator: Code generated in 11.0707 ms
+22/10/20 16:02:42 INFO Executor: Finished task 0.0 in stage 21.0 (TID 14). 165066 bytes result sent to driver
+22/10/20 16:02:42 INFO TaskSetManager: Finished task 0.0 in stage 21.0 (TID 14) in 75 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:42 INFO TaskSchedulerImpl: Removed TaskSet 21.0, whose tasks have all completed, from pool 
+22/10/20 16:02:42 INFO DAGScheduler: ResultStage 21 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83) finished in 0.086 s
+22/10/20 16:02:42 INFO DAGScheduler: Job 14 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 21: Stage finished
+22/10/20 16:02:42 INFO DAGScheduler: Job 14 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:83, took 0.096628 s
+22/10/20 16:02:42 INFO BlockManagerInfo: Removed broadcast_21_piece0 on 192.168.1.72:41245 in memory (size: 18.3 KiB, free: 434.2 MiB)
+22/10/20 16:02:42 INFO BlockManagerInfo: Removed broadcast_20_piece0 on 192.168.1.72:41245 in memory (size: 21.4 KiB, free: 434.2 MiB)
+22/10/20 16:02:42 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 192.168.1.72:41245 in memory (size: 19.7 KiB, free: 434.2 MiB)
+22/10/20 16:02:42 INFO FileSourceStrategy: Pushed Filters: IsNotNull(num_lectures)
+22/10/20 16:02:42 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(num_lectures#14),(cast(num_lectures#14 as double) > 15.0)
+22/10/20 16:02:42 INFO FileSourceStrategy: Output Data Schema: struct<course_title: string, num_lectures: string>
+22/10/20 16:02:43 INFO CodeGenerator: Code generated in 16.834157 ms
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_22 stored as values in memory (estimated size 199.0 KiB, free 433.1 MiB)
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_22_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.0 MiB)
+22/10/20 16:02:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 192.168.1.72:41245 (size: 33.9 KiB, free: 434.2 MiB)
+22/10/20 16:02:43 INFO SparkContext: Created broadcast 22 from toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:96
+22/10/20 16:02:43 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+22/10/20 16:02:43 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:96
+22/10/20 16:02:43 INFO DAGScheduler: Got job 15 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:96) with 1 output partitions
+22/10/20 16:02:43 INFO DAGScheduler: Final stage: ResultStage 22 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:96)
+22/10/20 16:02:43 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:43 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:43 INFO DAGScheduler: Submitting ResultStage 22 (MapPartitionsRDD[54] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:96), which has no missing parents
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_23 stored as values in memory (estimated size 14.5 KiB, free 433.0 MiB)
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_23_piece0 stored as bytes in memory (estimated size 7.2 KiB, free 433.0 MiB)
+22/10/20 16:02:43 INFO BlockManagerInfo: Added broadcast_23_piece0 in memory on 192.168.1.72:41245 (size: 7.2 KiB, free: 434.2 MiB)
+22/10/20 16:02:43 INFO SparkContext: Created broadcast 23 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 22 (MapPartitionsRDD[54] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:96) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Adding task set 22.0 with 1 tasks resource profile 0
+22/10/20 16:02:43 INFO TaskSetManager: Starting task 0.0 in stage 22.0 (TID 15) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4953 bytes) taskResourceAssignments Map()
+22/10/20 16:02:43 INFO Executor: Running task 0.0 in stage 22.0 (TID 15)
+22/10/20 16:02:43 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:43 INFO CodeGenerator: Code generated in 5.349518 ms
+22/10/20 16:02:43 INFO Executor: Finished task 0.0 in stage 22.0 (TID 15). 101595 bytes result sent to driver
+22/10/20 16:02:43 INFO TaskSetManager: Finished task 0.0 in stage 22.0 (TID 15) in 71 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Removed TaskSet 22.0, whose tasks have all completed, from pool 
+22/10/20 16:02:43 INFO DAGScheduler: ResultStage 22 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:96) finished in 0.081 s
+22/10/20 16:02:43 INFO DAGScheduler: Job 15 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Killing all running tasks in stage 22: Stage finished
+22/10/20 16:02:43 INFO DAGScheduler: Job 15 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:96, took 0.085020 s
+22/10/20 16:02:43 INFO FileSourceStrategy: Pushed Filters: 
+22/10/20 16:02:43 INFO FileSourceStrategy: Post-Scan Filters: atleastnnonnulls(1, subject#19)
+22/10/20 16:02:43 INFO FileSourceStrategy: Output Data Schema: struct<course_title: string, level: string, subject: string ... 1 more fields>
+22/10/20 16:02:43 INFO CodeGenerator: Code generated in 8.589772 ms
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_24 stored as values in memory (estimated size 199.0 KiB, free 432.8 MiB)
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_24_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 432.8 MiB)
+22/10/20 16:02:43 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 192.168.1.72:41245 (size: 33.9 KiB, free: 434.2 MiB)
+22/10/20 16:02:43 INFO SparkContext: Created broadcast 24 from toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110
+22/10/20 16:02:43 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+22/10/20 16:02:43 INFO CodeGenerator: Code generated in 8.026811 ms
+22/10/20 16:02:43 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110
+22/10/20 16:02:43 INFO DAGScheduler: Got job 16 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110) with 1 output partitions
+22/10/20 16:02:43 INFO DAGScheduler: Final stage: ResultStage 23 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110)
+22/10/20 16:02:43 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:43 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:43 INFO DAGScheduler: Submitting ResultStage 23 (MapPartitionsRDD[60] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110), which has no missing parents
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_25 stored as values in memory (estimated size 16.0 KiB, free 432.8 MiB)
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_25_piece0 stored as bytes in memory (estimated size 7.9 KiB, free 432.8 MiB)
+22/10/20 16:02:43 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 192.168.1.72:41245 (size: 7.9 KiB, free: 434.2 MiB)
+22/10/20 16:02:43 INFO SparkContext: Created broadcast 25 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 23 (MapPartitionsRDD[60] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Adding task set 23.0 with 1 tasks resource profile 0
+22/10/20 16:02:43 INFO TaskSetManager: Starting task 0.0 in stage 23.0 (TID 16) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4953 bytes) taskResourceAssignments Map()
+22/10/20 16:02:43 INFO Executor: Running task 0.0 in stage 23.0 (TID 16)
+22/10/20 16:02:43 INFO CodeGenerator: Code generated in 7.616693 ms
+22/10/20 16:02:43 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:43 INFO Executor: Finished task 0.0 in stage 23.0 (TID 16). 185688 bytes result sent to driver
+22/10/20 16:02:43 INFO TaskSetManager: Finished task 0.0 in stage 23.0 (TID 16) in 83 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Removed TaskSet 23.0, whose tasks have all completed, from pool 
+22/10/20 16:02:43 INFO DAGScheduler: ResultStage 23 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110) finished in 0.092 s
+22/10/20 16:02:43 INFO DAGScheduler: Job 16 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Killing all running tasks in stage 23: Stage finished
+22/10/20 16:02:43 INFO DAGScheduler: Job 16 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110, took 0.096746 s
+22/10/20 16:02:43 INFO DAGScheduler: Registering RDD 61 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110) as input to shuffle 5
+22/10/20 16:02:43 INFO DAGScheduler: Got map stage job 17 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110) with 1 output partitions
+22/10/20 16:02:43 INFO DAGScheduler: Final stage: ShuffleMapStage 24 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110)
+22/10/20 16:02:43 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:43 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:43 INFO DAGScheduler: Submitting ShuffleMapStage 24 (MapPartitionsRDD[61] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110), which has no missing parents
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_26 stored as values in memory (estimated size 18.2 KiB, free 432.7 MiB)
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_26_piece0 stored as bytes in memory (estimated size 9.0 KiB, free 432.7 MiB)
+22/10/20 16:02:43 INFO BlockManagerInfo: Added broadcast_26_piece0 in memory on 192.168.1.72:41245 (size: 9.0 KiB, free: 434.1 MiB)
+22/10/20 16:02:43 INFO SparkContext: Created broadcast 26 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:43 INFO BlockManagerInfo: Removed broadcast_14_piece0 on 192.168.1.72:41245 in memory (size: 33.9 KiB, free: 434.2 MiB)
+22/10/20 16:02:43 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 24 (MapPartitionsRDD[61] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Adding task set 24.0 with 1 tasks resource profile 0
+22/10/20 16:02:43 INFO TaskSetManager: Starting task 0.0 in stage 24.0 (TID 17) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4942 bytes) taskResourceAssignments Map()
+22/10/20 16:02:43 INFO Executor: Running task 0.0 in stage 24.0 (TID 17)
+22/10/20 16:02:43 INFO BlockManagerInfo: Removed broadcast_23_piece0 on 192.168.1.72:41245 in memory (size: 7.2 KiB, free: 434.2 MiB)
+22/10/20 16:02:43 INFO BlockManagerInfo: Removed broadcast_25_piece0 on 192.168.1.72:41245 in memory (size: 7.9 KiB, free: 434.2 MiB)
+22/10/20 16:02:43 INFO BlockManagerInfo: Removed broadcast_17_piece0 on 192.168.1.72:41245 in memory (size: 33.9 KiB, free: 434.2 MiB)
+22/10/20 16:02:43 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:43 INFO Executor: Finished task 0.0 in stage 24.0 (TID 17). 1843 bytes result sent to driver
+22/10/20 16:02:43 INFO TaskSetManager: Finished task 0.0 in stage 24.0 (TID 17) in 109 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Removed TaskSet 24.0, whose tasks have all completed, from pool 
+22/10/20 16:02:43 INFO DAGScheduler: ShuffleMapStage 24 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110) finished in 0.131 s
+22/10/20 16:02:43 INFO DAGScheduler: looking for newly runnable stages
+22/10/20 16:02:43 INFO DAGScheduler: running: Set()
+22/10/20 16:02:43 INFO DAGScheduler: waiting: Set()
+22/10/20 16:02:43 INFO DAGScheduler: failed: Set()
+22/10/20 16:02:43 INFO ShufflePartitionsUtil: For shuffle(5), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+22/10/20 16:02:43 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110
+22/10/20 16:02:43 INFO DAGScheduler: Got job 18 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110) with 1 output partitions
+22/10/20 16:02:43 INFO DAGScheduler: Final stage: ResultStage 26 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110)
+22/10/20 16:02:43 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 25)
+22/10/20 16:02:43 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:43 INFO DAGScheduler: Submitting ResultStage 26 (MapPartitionsRDD[64] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110), which has no missing parents
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_27 stored as values in memory (estimated size 28.3 KiB, free 433.2 MiB)
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_27_piece0 stored as bytes in memory (estimated size 13.9 KiB, free 433.2 MiB)
+22/10/20 16:02:43 INFO BlockManagerInfo: Added broadcast_27_piece0 in memory on 192.168.1.72:41245 (size: 13.9 KiB, free: 434.2 MiB)
+22/10/20 16:02:43 INFO SparkContext: Created broadcast 27 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 26 (MapPartitionsRDD[64] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Adding task set 26.0 with 1 tasks resource profile 0
+22/10/20 16:02:43 INFO TaskSetManager: Starting task 0.0 in stage 26.0 (TID 18) (192.168.1.72, executor driver, partition 0, NODE_LOCAL, 4453 bytes) taskResourceAssignments Map()
+22/10/20 16:02:43 INFO Executor: Running task 0.0 in stage 26.0 (TID 18)
+22/10/20 16:02:43 INFO ShuffleBlockFetcherIterator: Getting 1 (146.8 KiB) non-empty blocks including 1 (146.8 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+22/10/20 16:02:43 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/10/20 16:02:43 INFO CodeGenerator: Code generated in 7.701251 ms
+22/10/20 16:02:43 INFO CodeGenerator: Code generated in 11.114494 ms
+22/10/20 16:02:43 INFO Executor: Finished task 0.0 in stage 26.0 (TID 18). 148376 bytes result sent to driver
+22/10/20 16:02:43 INFO TaskSetManager: Finished task 0.0 in stage 26.0 (TID 18) in 56 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Removed TaskSet 26.0, whose tasks have all completed, from pool 
+22/10/20 16:02:43 INFO DAGScheduler: ResultStage 26 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110) finished in 0.068 s
+22/10/20 16:02:43 INFO DAGScheduler: Job 18 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Killing all running tasks in stage 26: Stage finished
+22/10/20 16:02:43 INFO DAGScheduler: Job 18 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:110, took 0.074141 s
+22/10/20 16:02:43 INFO FileSourceStrategy: Pushed Filters: IsNotNull(content_duration)
+22/10/20 16:02:43 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(content_duration#9),(cast(content_duration#9 as float) > 2.0)
+22/10/20 16:02:43 INFO FileSourceStrategy: Output Data Schema: struct<content_duration: string, course_title: string>
+22/10/20 16:02:43 INFO CodeGenerator: Code generated in 18.032112 ms
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_28 stored as values in memory (estimated size 199.0 KiB, free 433.0 MiB)
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_28_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.0 MiB)
+22/10/20 16:02:43 INFO BlockManagerInfo: Added broadcast_28_piece0 in memory on 192.168.1.72:41245 (size: 33.9 KiB, free: 434.2 MiB)
+22/10/20 16:02:43 INFO SparkContext: Created broadcast 28 from toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:123
+22/10/20 16:02:43 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+22/10/20 16:02:43 INFO SparkContext: Starting job: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:123
+22/10/20 16:02:43 INFO DAGScheduler: Got job 19 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:123) with 1 output partitions
+22/10/20 16:02:43 INFO DAGScheduler: Final stage: ResultStage 27 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:123)
+22/10/20 16:02:43 INFO DAGScheduler: Parents of final stage: List()
+22/10/20 16:02:43 INFO DAGScheduler: Missing parents: List()
+22/10/20 16:02:43 INFO DAGScheduler: Submitting ResultStage 27 (MapPartitionsRDD[68] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:123), which has no missing parents
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_29 stored as values in memory (estimated size 14.4 KiB, free 433.0 MiB)
+22/10/20 16:02:43 INFO MemoryStore: Block broadcast_29_piece0 stored as bytes in memory (estimated size 7.2 KiB, free 432.9 MiB)
+22/10/20 16:02:43 INFO BlockManagerInfo: Added broadcast_29_piece0 in memory on 192.168.1.72:41245 (size: 7.2 KiB, free: 434.2 MiB)
+22/10/20 16:02:43 INFO SparkContext: Created broadcast 29 from broadcast at DAGScheduler.scala:1513
+22/10/20 16:02:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 27 (MapPartitionsRDD[68] at toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:123) (first 15 tasks are for partitions Vector(0))
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Adding task set 27.0 with 1 tasks resource profile 0
+22/10/20 16:02:43 INFO TaskSetManager: Starting task 0.0 in stage 27.0 (TID 19) (192.168.1.72, executor driver, partition 0, PROCESS_LOCAL, 4953 bytes) taskResourceAssignments Map()
+22/10/20 16:02:43 INFO Executor: Running task 0.0 in stage 27.0 (TID 19)
+22/10/20 16:02:43 INFO FileScanRDD: Reading File path: file:///home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/udemy_courses.json, range: 0-1452143, partition values: [empty row]
+22/10/20 16:02:43 INFO CodeGenerator: Code generated in 5.472738 ms
+22/10/20 16:02:43 INFO Executor: Finished task 0.0 in stage 27.0 (TID 19). 71685 bytes result sent to driver
+22/10/20 16:02:43 INFO TaskSetManager: Finished task 0.0 in stage 27.0 (TID 19) in 73 ms on 192.168.1.72 (executor driver) (1/1)
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Removed TaskSet 27.0, whose tasks have all completed, from pool 
+22/10/20 16:02:43 INFO DAGScheduler: ResultStage 27 (toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:123) finished in 0.081 s
+22/10/20 16:02:43 INFO DAGScheduler: Job 19 is finished. Cancelling potential speculative or zombie tasks for this job
+22/10/20 16:02:43 INFO TaskSchedulerImpl: Killing all running tasks in stage 27: Stage finished
+22/10/20 16:02:43 INFO DAGScheduler: Job 19 finished: toPandas at /home/prasag/Desktop/Fuse/spark/Assignment/udemy_courses/Udemy Courses Assignment(to csv).py:123, took 0.085328 s
+22/10/20 16:02:44 INFO SparkContext: Invoking stop() from shutdown hook
+22/10/20 16:02:44 INFO SparkUI: Stopped Spark web UI at http://192.168.1.72:4042
+22/10/20 16:02:44 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+22/10/20 16:02:44 INFO MemoryStore: MemoryStore cleared
+22/10/20 16:02:44 INFO BlockManager: BlockManager stopped
+22/10/20 16:02:44 INFO BlockManagerMaster: BlockManagerMaster stopped
+22/10/20 16:02:44 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+22/10/20 16:02:44 INFO SparkContext: Successfully stopped SparkContext
+22/10/20 16:02:44 INFO ShutdownHookManager: Shutdown hook called
+22/10/20 16:02:44 INFO ShutdownHookManager: Deleting directory /tmp/spark-017ed9c8-1788-423b-9608-b94ff4753e4f/pyspark-52102ba4-0ecb-4c70-a433-de5532791e10
+22/10/20 16:02:44 INFO ShutdownHookManager: Deleting directory /tmp/spark-f08ba187-e169-4e4a-8652-de3263e06d0d
+22/10/20 16:02:44 INFO ShutdownHookManager: Deleting directory /tmp/spark-017ed9c8-1788-423b-9608-b94ff4753e4f
