@@ -13,7 +13,7 @@
 
 # Assignment
 **<pre>
-[Assignment](https://github.com/pradipsapkotag/spark/tree/master/Assignment)                               # Assignment folder
+[Assignment](https://github.com/pradipsapkotag/spark/tree/master/Assignment)    # Assignment folder
 .
 |
 ├── [udemy_courses](https://github.com/pradipsapkotag/spark/tree/master/Assignment/udemy_courses)
@@ -34,7 +34,7 @@
 │   ├── udemy_questions.docx
 │   └── [udemy_questions.pdf](https://github.com/pradipsapkotag/spark/blob/master/Assignment/udemy_courses/udemy_questions.pdf) # given question set for udemy course 
 └── [walmart_ecommerce_product_details](https://github.com/pradipsapkotag/spark/tree/master/Assignment/walmart_ecommerce_product_details)
-    ├── [logs.txt](https://github.com/pradipsapkotag/spark/blob/master/Assignment/walmart_ecommerce_product_details/logs.txt) #udemy courses spark-submit log
+    ├── [logs.txt](https://github.com/pradipsapkotag/spark/blob/master/Assignment/walmart_ecommerce_product_details/logs.txt) #walmart ecommerce spark-submit log
     ├── [OutputDatas](https://github.com/pradipsapkotag/spark/tree/master/Assignment/walmart_ecommerce_product_details/OutputDatas)
     │   ├── [1.brand_with_product.csv](https://github.com/pradipsapkotag/spark/blob/master/Assignment/walmart_ecommerce_product_details/OutputDatas/1.brand_with_product.csv) # csv file for output question 1
     │   ├── [2.list_price_greater_than_sales_price.csv](https://github.com/pradipsapkotag/spark/blob/master/Assignment/walmart_ecommerce_product_details/OutputDatas/2.list_price_greater_than_sales_price.csv) # csv file for output question 2
